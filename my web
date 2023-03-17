@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>disabled & readonly</title>
+</head>
+<body>
+  <form action="#" method="get">
+
+    <button type="submit">
+        <img src="facebook.jpg" alt="페이스북 버튼" width="10%">
+        <a href="https://ko-kr.facebook.com/">페이스북에 등록하기 </a>
+    </button>
+
+    <input type="text" disabled>
+    <button type="button" disabled >비활성</button>
+    <!-- 비활성 속성 이용법 -->
+
+
+    <fieldset>
+        <legend>로그인</legend>
+        <p>
+            <label for="userid">아이디</label>
+            <input type="password" id="userid">
+        </p>
+        <p>
+            <label for="pw">비밀번호
+            <textarea id="pw" name="pw"> </textarea>
+            </label>
+        </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>회원가입</legend>
+        <P>
+        <label for="email">이메일</label>
+        <input type="text" id="emeil">
+        </P>
+        <p>
+        <label for="user">초기 비밀번호</label>
+        <input type="text" id="user">
+        </p>
+
+
+
+        <select name="city" id="city" multiple >
+            <outgroup label="사는 지역">
+                <option value="강북구">강북구</option>  
+                <option value="강남구">강남구</option>
+                <option value="성동구" selected>성동구</option>              
+                <option value="중원구">중원구</option>
+                <option value="분당구">분당구</option>
+                <option value="성동구">성동구</option>
+            </outgroup>
+        </select>
+    </fieldset>
+
+    <input type="password" readonly>
+    <br>
+    <textarea readonly></textarea>
+    <!--상호작용 요소를 읽기 전용으로 변경하는 readonly 속성 -->
+
+
+    
+    
+
+
+
+  </form>
+</body>
+</html>
